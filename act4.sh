@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Enter your exam score (0-100)."
+echo -n "Enter your exam score (0-100): "
 read score
 
 if ! [[ "$score" =~ ^[0-9]+$ ]] || [ "$score" -lt 0 ] || [ "$score" -gt 100 ]; then
